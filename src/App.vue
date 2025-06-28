@@ -1,7 +1,9 @@
 <template>
-  <div id="app">
+  <div id="app" class="app-bg">
     <BaseNavigation />
-    <router-view />
+    <div class="app-content">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -19,7 +21,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   margin-top: 60px;
+  background: linear-gradient(120deg, #fffbe6 0%, #f0f9ff 100%);
+  min-height: 100vh;
+}
+.app-bg {
+  min-height: 100vh;
+  background: transparent;
+}
+.app-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 0 40px 0;
 }
 </style>

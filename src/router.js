@@ -4,6 +4,7 @@ import HomeView from './views/Home.vue'
 import NewsView from './views/News.vue'
 import ContactView from './views/Contact.vue'
 import AboutView from './views/about.vue'
+import ShopView from './views/Shop.vue'
 import ChickenRiceDetailView from './views/Chicken rice/_id.vue'
 
 Vue.use(Router)
@@ -15,6 +16,11 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: HomeView
+    },
+    {
+      path: '/shop',
+      name: 'Shop',
+      component: ShopView
     },
     {
       path: '/news',
