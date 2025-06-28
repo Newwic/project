@@ -7,7 +7,7 @@
         <h2>{{ item.name }}</h2>
         <p class="shop-desc">{{ item.desc }}</p>
         <p class="shop-price">ราคา {{ item.price }} บาท</p>
-        <button class="shop-btn gradient-btn">สั่งซื้อ</button>
+        <button class="shop-btn">สั่งซื้อ</button>
       </div>
     </div>
   </div>
@@ -118,23 +118,5 @@ export default {
 }
 .shop-btn:hover {
   background: #f39c12;
-}
-.gradient-btn {
-  background: linear-gradient(90deg, #e67e22 0%, #f39c12 100%);
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 28px;
-  font-size: 1.08rem;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(230,126,34,0.12);
-  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
-  margin-top: 8px;
-}
-.gradient-btn:hover {
-  background: linear-gradient(90deg, #f39c12 0%, #e67e22 100%);
-  transform: translateY(-2px) scale(1.04);
-  box-shadow: 0 4px 16px rgba(230,126,34,0.18);
 }
 </style>
